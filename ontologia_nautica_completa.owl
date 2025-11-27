@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N5fbfa9e79d29410283a0c3626ee2cde8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/nautica#usaEmbarcacao"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/nautica#Veleiro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Embarcacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Naa43f68b512d487d96ed67a8fa47b667"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Regata">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#EventoNautico"/>
+    <rdfs:subClassOf rdf:nodeID="N5fbfa9e79d29410283a0c3626ee2cde8"/>
+    <rdfs:comment>A regatta is a series of boat races; in sailing it refers to competitive events involving sailboats. Source: https://dbpedia.org/page/Regatta</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Regatta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#PortoMarina">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#LocalizacaoMaritima"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#usaEmbarcacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/nautica#EventoNautico"/>
+    <rdfs:range rdf:resource="http://example.org/nautica#Embarcacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Baia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#LocalizacaoMaritima"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#EstadoDoMar">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#CondicaoAmbiental"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Casco">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Vento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#CondicaoAmbiental"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Jibe">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Manobra"/>
+    <rdfs:comment>A jibe (gybe) is a sailing maneuver in which the stern of the boat passes through the wind, causing the sails to shift from one side to the other; usually performed when sailing downwind. Source: http://dbpedia.org/page/Jibe</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Jibe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#direcaoDoVento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Quilha">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+    <rdfs:comment>A keel is a structural element on the underside of a boat or ship that provides hydrodynamic lift and stability, resisting sideways motion. Source: https://en.wikipedia.org/wiki/Keel</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Keel"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naa43f68b512d487d96ed67a8fa47b667">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://example.org/nautica#possuiComponente"/>
+    <owl:someValuesFrom rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Tripulante">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Tripulacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Genoa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Vela"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Mare">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#CondicaoAmbiental"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#eTripuladaPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/nautica#Embarcacao"/>
+    <rdfs:range rdf:resource="http://example.org/nautica#Tripulacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Catamara">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Multicasco"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#GrandeVela">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Vela"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Canal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#LocalizacaoMaritima"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Proeiro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Tripulacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#temCondicaoAmbiental">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/nautica#LocalizacaoMaritima"/>
+    <rdfs:range rdf:resource="http://example.org/nautica#CondicaoAmbiental"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#executaManobra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/nautica#Tripulacao"/>
+    <rdfs:range rdf:resource="http://example.org/nautica#Manobra"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Spinnaker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Vela"/>
+    <rdfs:comment>A spinnaker is a sail designed specifically for sailing off the wind (downwind), usually of lightweight fabric and often brightly colored. Source: http://dbpedia.org/page/Spinnaker</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Spinnaker"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#EquipamentoDeSeguranca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#RadioVHF">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#EquipamentoDeSeguranca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Comandante">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Tripulacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Passeio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#EventoNautico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Vela">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+    <rdfs:comment>A sail is a surface (traditionally of fabric) used to catch the power of the wind and propel a sailing craft. Source: https://dbpedia.org/page/Sail</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Sail"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Timoneiro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Tripulacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Veleiro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Embarcacao"/>
+    <rdfs:comment>Sailing: Sailing employs the wind—acting on sails, wingsails or kites—to propel a craft on the surface of the water; in this ontology 'Veleiro' (sailboat) is a sailing vessel propelled primarily by sails. Source: http://dbpedia.org/page/Sailing</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/page/Sailing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Treinamento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#EventoNautico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#ViradaDeBorda">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Manobra"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#velocidadeDoVento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#temLargura">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#ocorreEm">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/nautica#EventoNautico"/>
+    <rdfs:range rdf:resource="http://example.org/nautica#LocalizacaoMaritima"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Multicasco">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Veleiro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Leme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+    <rdfs:comment>A rudder is a primary control surface used to steer a ship, boat or other vehicle that moves through a fluid medium. Source: https://dbpedia.org/page/Rudder</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Rudder"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#nomeEmbarcacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#possuiComponente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/nautica#Embarcacao"/>
+    <rdfs:range rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#MarAberto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#LocalizacaoMaritima"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#alturaOndas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#AulaDeVela">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#EventoNautico"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#ColeteSalvaVidas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#EquipamentoDeSeguranca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Tack">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Manobra"/>
+    <rdfs:comment>Tack (tacking) is the sailing maneuver by which a sailing craft turns its bow through the wind so that the wind shifts from one side of the vessel to the other, allowing progress upwind. Source: https://en.wikipedia.org/wiki/Tacking_(sailing)</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://en.wikipedia.org/wiki/Tacking_(sailing)"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Trimaran">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Multicasco"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Correnteza">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#CondicaoAmbiental"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Cabine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Mastro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#ComponenteEmbarcacao"/>
+    <rdfs:comment>A mast is a vertical spar, or arrangement of spars, erected on the centreline of a ship or boat to carry sail or rigging. Source: https://dbpedia.org/page/Mast</rdfs:comment>
+    <rdfs:seeAlso rdf:resource="https://dbpedia.org/page/Mast"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#temComprimento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#EventoNautico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#anoConstrucao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#temEquipamentoDeSeguranca">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/nautica#Embarcacao"/>
+    <rdfs:range rdf:resource="http://example.org/nautica#EquipamentoDeSeguranca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#horarioEvento">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Monocasco">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#Veleiro"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Tripulacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Manobra">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Visibilidade">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#RecolherVela">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#Sinalizador">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/nautica#EquipamentoDeSeguranca"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#ComponenteEmbarcacao">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#CondicaoAmbiental">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#IcarVela">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/nautica#LocalizacaoMaritima">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
